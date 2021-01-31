@@ -1,2 +1,1 @@
-# restfulApiTugasAkhir
 # CodeigniterRestAPIJWTTemplate
