@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "b39f87ed-bcad-4bca-ab87-576c995075a1",
+		"name": "Template Codeigniter JWT RestfulAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Daftar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "aldi@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "aldi",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1/templatejwt/api/daftarpengguna",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"templatejwt",
+						"api",
+						"daftarpengguna"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Masuk",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "aldi@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1/templatejwt/api/masukpengguna",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"templatejwt",
+						"api",
+						"masukpengguna"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lihat Info Pengguna",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJlbWFpbF9wZW5nZ3VuYSI6ImFsZGlAZ21haWwuY29tIiwidGltZSI6MTYxMjEwMjY0OH0.7iK-LC8-5IEtiJrarSkwuy_S4v_B3hQ5L75yiUq6EQk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1/templatejwt/api/lihatdatapengguna/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"templatejwt",
+						"api",
+						"lihatdatapengguna",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lihat Info Aplikasi",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJlbWFpbF9wZW5nZ3VuYSI6ImFsZGlAZ21haWwuY29tIiwidGltZSI6MTYxMjEwMjY0OH0.7iK-LC8-5IEtiJrarSkwuy_S4v_B3hQ5L75yiUq6EQk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1/templatejwt/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"templatejwt",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ganti Password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJlbWFpbF9wZW5nZ3VuYSI6ImFsZGlAZ21haWwuY29tIiwidGltZSI6MTYxMjEwMjY0OH0.7iK-LC8-5IEtiJrarSkwuy_S4v_B3hQ5L75yiUq6EQk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idpengguna",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "passwordlama",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "passwordbaru",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1/templatejwt/api/gantipasswordpengguna",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"templatejwt",
+						"api",
+						"gantipasswordpengguna"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
